@@ -1,0 +1,112 @@
+.main-container{
+    background: #F2F2F2;
+    padding: 0;
+    font-family: Roboto-Regular,HelveticaNeue,Arial,sans-serif;
+}
+
+.data-container{
+    padding: 1px 8px 0;
+}
+
+.g_card{
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    border-bottom: 1px hidden #fff;
+    /*margin: 0 0 10px 0;*/
+    padding: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.g_card_content{
+
+}
+
+.g_card_header{
+    border-bottom: 1px solid #ebebeb;
+    display: block;
+    line-height: 20px;
+    margin: 2px -16px 9px -16px;
+    padding: 0 16px 11px 16px;
+}
+
+.g_card_header_primary{
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: inherit;
+    padding: 0;
+}
+
+.g_card_header_secondary{
+    margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.g_card_header_secondary > cite{
+    color: #006621;
+    max-width: 95%;
+    white-space: nowrap;
+    font-family: Roboto-Regular,HelveticaNeue,Arial,sans-serif !important;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+.g_card_extra{
+    line-height: 20px;
+    word-wrap: break-word;
+    color: #222;
+}
+
+.g_card_extra_content{
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.g_card_extra_info{
+    color: #777;
+}
+
+.g_card_section{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 11px 16px 11px 16px;
+    margin: 0;
+    display: block;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+}
+
+.header-container{
+    display: block;
+    height: 64px;
+    position: relative;
+    width: 100%;
+}
+
+.header-container-icon{
+    padding: 16px 0 14px;
+    position: absolute;
+    left: 50%;
+    margin-left: -46px; /*TODO Use half the size of the logo HERE*/
+}
+
+.header-container-icon-image{
+    background: url(https://www.google.de/images/nav_logo242_hr.png) no-repeat;
+    background-position: 0 -374px;
+    background-size: 167px;
+    height: 36px;
+    width: 92px;
+}
+
