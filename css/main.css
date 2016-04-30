@@ -44,7 +44,7 @@
 
 .g_card_header_primary_relative{
     margin-left: 52px;
-    margin-right: 72px;
+    /*margin-right: 72px;*/
 }
 
 
@@ -59,7 +59,7 @@
 
 .g_card_header_secondary_relative{
     margin-left: 52px;
-    margin-right: 72px;
+    /*margin-right: 72px;*/
 }
 
 .g_card_header_secondary > cite, .g_card_header_secondary_relative > cite{
