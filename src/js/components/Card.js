@@ -15,22 +15,22 @@ var Card = React.createClass({
             <div className="col-md-12 g_card">
                 <div className="g_card_section">
                     <div className="g_card_content">
-                        <div className="g_card_header">
-                            <h3 className="g_card_header_primary">
-                                <a href="#">Wie Sie JavaScript in Ihrem Browser</a>
-                            </h3>
-                            <div className="g_card_header_secondary">
-                                <cite>enable-javascript.com › ...</cite>
-                            </div>
+                    <div className="g_card_header">
+                        <h3 className="g_card_header_primary">
+                            <a href="#">Wie Sie JavaScript in Ihrem Browser</a>
+                        </h3>
+                        <div className="g_card_header_secondary">
+                            <cite>enable-javascript.com › ...</cite>
                         </div>
-                        <div className="g_card_extra">
-                            <span className="g_card_extra_content">
-                                <span className="g_card_extra_info">
-                                    Für Mobilgeräte -
-                                </span>
-                                Wie Sie JavaScript in Ihrem Browser
+                    </div>
+                    <div className="g_card_extra">
+                        <span className="g_card_extra_content">
+                            <span className="g_card_extra_info">
+                                Für Mobilgeräte -
                             </span>
-                        </div>
+                            Wie Sie JavaScript in Ihrem Browser
+                        </span>
+                    </div>
                     </div>
                 </div>
             </div>

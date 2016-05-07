@@ -7,10 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //Importing Card
-import { Card } from './index';
-
-var classNames = require('classnames');
-
+import { Card, Header } from './index';
 
 var App = React.createClass({
     getInitialState: function(){
@@ -21,23 +18,24 @@ var App = React.createClass({
     },
     render: function(){
         return (
-            <div class={classNames('container-fluid', 'main-container')}>
-                <div class="header-container">
-                    <a href="#" class="header-container-icon">
-                        <div class="header-container-icon-image"></div>
-                    </a>
-                </div>
+                    <div className="container-fluid main-container">
+                        <Header />
+                        <div className="data-container">
+                            <div className="main">
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                            </div>
+                        </div>
 
-                <div class="data-container">
-                    <div class="main">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+
                     </div>
-                </div>
-            </div>
+                  
         )
 
     }
