@@ -20,8 +20,20 @@ var App = React.createClass({
         return (
                     <div className="container-fluid main-container">
                         <Header />
-                        <div className="data-container">
+                        <div className="data-container col-md-2 col-md-offset-2">
                             <div className="main">
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
                                 <Card />
                                 <Card />
                                 <Card />
@@ -32,8 +44,30 @@ var App = React.createClass({
                                 <Card />
                             </div>
                         </div>
-
-
+                        <div className="data-container col-md-6">
+                            <div className="main">
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                            </div>
+                        </div>
                     </div>
                   
         )
