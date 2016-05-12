@@ -17,10 +17,10 @@ var Card = React.createClass({
                     <div className="g_card_content">
                     <div className="g_card_header">
                         <h3 className="g_card_header_primary">
-                            <a href="#">Wie Sie JavaScript in Ihrem Browser</a>
+                            <a href="#">Demo Property Name</a>
                         </h3>
                         <div className="g_card_header_secondary">
-                            <cite>enable-javascript.com › ...</cite>
+                            <cite>Demo address street 184, zip code, city</cite>
                         </div>
                     </div>
                     <div className="g_card_extra">
@@ -34,10 +34,11 @@ var Card = React.createClass({
                     </div>
                 </div>
             </div>
+            
+            
+            
         )
-
     }
-
 });
 
 export default Card;

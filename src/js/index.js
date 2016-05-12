@@ -4,3 +4,4 @@
 
 export { default as Card } from './components/Card';
 export { default as Header} from './components/Header';
+export { default as CardWithImage} from './components/CardWithImage';
