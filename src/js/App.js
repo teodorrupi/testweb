@@ -6,6 +6,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
 //Importing Card
 import { Card, Header, CardWithImage } from './index';
 
@@ -54,7 +55,6 @@ var App = React.createClass({
 });
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
 
 /*
 <div className="data-container col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">

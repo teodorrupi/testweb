@@ -89,6 +89,10 @@
     word-wrap: break-word;
 }
 
+.g_card_extra_content_extended{
+    height: 50px;
+}
+
 .non_active_extra_content{
     padding: 16px 0 14px;
     position: absolute;

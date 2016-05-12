@@ -7,7 +7,15 @@ import React from "react";
 var Card = React.createClass({
     getInitialState: function () {
         return {
-            data: ''
+            data: '',
+            expanded_data: 'g_card_extra_content_data'
+        }
+    },
+    handleClick: function(event) {
+        if (this.state.expanded_data === 'g_card_extra_content_data'){
+            this.setState({expanded_data: 'g_card_extra_content_extended'});
+        } else {
+            this.setState({expanded_data: 'g_card_extra_content_data'});
         }
     },
     render(){
@@ -26,9 +34,9 @@ var Card = React.createClass({
                                     </div>
                             </div>
                             <div className="g_card_extra ">
-                               <a href="#" className="g_card_extra_content ">
-                                   <div>
-                                       Good (223 reviews) - $$$ - Closed (opens at 10:00)
+                               <a href="#" className="g_card_extra_content" onClick={this.handleClick}>
+                                   <div className={this.state.expanded_data} >
+                                       <strong>Good</strong> (223 reviews) - <strong>$$$</strong> - <strong>Closed</strong> (opens at 10:00)
                                    </div>
                                </a>
                             </div>
