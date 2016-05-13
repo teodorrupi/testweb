@@ -21,7 +21,31 @@ var App = React.createClass({
         return (
                     <div className="container-fluid main-container">
                         <Header />
-                        <div className="data-container col-md-6 col-md-offset-3">
+                        <div className="data-container col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
+                            <div className="main">
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                                <Card />
+                            </div>
+                        </div>
+                        <div className="data-container col-md-6">
                             <div className="main">
                                 <CardWithImage />
                                 <CardWithImage />
