@@ -8,7 +8,9 @@ import ReactDOM from 'react-dom';
 
 
 //Importing Card
-import { Card, Header, CardWithImage, Search } from './index';
+import { Card, Header, CardWithImage, Search, Parent, Options } from './index';
+
+import Data from './components/Data';
 
 var App = React.createClass({
     getInitialState: function(){
@@ -17,64 +19,20 @@ var App = React.createClass({
         }
 
     },
+    handleInput: function(filterText){
+        this.setState({
+            filterText: filterText
+        })
+    },
+
     render: function(){
         return (
                     <div className="container-fluid main-container">
                         <Header />
                         <div className="col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 main-container">
-                            <Search />
+                            <Search filterText={this.state.filterText} onUserInput={this.handleInput}/>
                         </div>
-                        <div className="main-container col-md-12">
-                            <div className="data-container col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">
-                                <div className="main">
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                </div>
-                            </div>
-                            <div className="data-container col-md-6">
-                                <div className="main">
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <CardWithImage />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                    <Card />
-                                </div>
-                            </div>
-                        </div>
+                        <Parent cards={this.props.cards} filterText={this.state.filterText} />
                     </div>
                   
         )
@@ -83,7 +41,7 @@ var App = React.createClass({
 
 });
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App cards={Data}/>, document.getElementById('app'));
 
 /*
 <div className="data-container col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-2">

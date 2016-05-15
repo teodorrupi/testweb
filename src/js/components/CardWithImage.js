@@ -27,16 +27,22 @@ var Card = React.createClass({
                             <div className="g_card_header">
                                 <img className="g_card_header_img" src="http://www.hungerfreecolorado.org/wp-content/uploads/2014/08/Icon-Dining1-300x300.jpg"/>
                                     <h3 className="g_card_header_primary_relative">
-                                        <a href="#">Demo Property Name</a>
+                                        <a href="#">{this.props.name}</a>
                                     </h3>
                                     <div className="g_card_header_secondary_relative">
-                                        <cite>Demo address street 184, zip code, city</cite>
+                                        <cite>{this.props.address}, {this.props.city}</cite>
                                     </div>
                             </div>
                             <div className="g_card_extra ">
+                               <span className="g_card_extra_content">
+                                   <span className="g_card_extra_info">
+                                       Für Mobilgeräte -
+                                   </span>
+                                   Wie Sie JavaScript in Ihrem Browser
+                               </span>
                                <a href="#" className="g_card_extra_content" onClick={this.handleClick}>
                                    <div className={this.state.expanded_data} >
-                                       <strong>Good</strong> (223 reviews) - <strong>$$$</strong> - <strong>Closed</strong> (opens at 10:00)
+                                       <strong>Good</strong> (223 reviews)
                                    </div>
                                </a>
                             </div>

@@ -1,3 +1,6 @@
+body{
+    background: #F2F2F2;
+}
 
 .main-container{
     background: #F2F2F2;
@@ -7,6 +10,15 @@
 
 .data-container{
     padding: 1px 8px 0;
+
+}
+
+.option-container{
+    padding: 1px 8px 0 0;
+}
+
+.full-page{
+    height:100vh;
 }
 
 .g_card{
@@ -15,6 +27,13 @@
     border-radius: 2px;
     border-bottom: 1px hidden #fff;
     /*margin: 0 0 10px 0;*/
+    padding: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.g_card_button_container{
     padding: 0;
     margin-top: 0px;
     margin-right: 0px;
@@ -334,4 +353,47 @@ a{
     padding-left: 16px;
 
     outline: none;
+}
+
+a.g_card_extra_content{
+    text-decoration: none;
+}
+
+a.g_button{
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    margin: 2px 0;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+    -webkit-transition: all 0.218s,visibility 0s;
+    transition: all 0.218s,visibility 0s;
+    -webkit-user-select: none;
+
+    background-color: #f5f5f5;
+    /* background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1)); */
+    /* background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1); */
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    /* border: 1px solid #dcdcdc; */
+    border: 1px solid rgba(0,0,0,0.1);
+    /* color: #444; */
+
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: #444;
+    margin: 0;
+
+    text-decoration: none;
+
+    background: #4d90fe;
+    border-color: #3079ed;
+    font-weight: bold;
+    color: white;
 }
